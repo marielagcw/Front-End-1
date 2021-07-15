@@ -1,0 +1,96 @@
+/* <<<<<  ᓚᘏᗢ  Header   >>>>> */
+
+header{
+    background-color: #E6E6E6;       
+}
+
+#foto_perfil {
+    width: 100px;
+    display: block;
+    margin:auto;
+}
+
+h1 {
+    background-color: #C4C4C4;
+    color: #005677;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*<<<<<  ᓚᘏᗢ  Main   >>>>> */
+
+h2 {
+    background-color: #C4C4C4;
+    color: #005677;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    padding-left: 1%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitulo1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    display:inline;
+}
+
+.subtitulo2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    display:inline;
+}
+
+.subtitulo3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline;
+}
+
+.description{
+    display: inline;
+    margin-left:initial
+    
+}
+
+p {
+    display:inline;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 80px;
+}
+
+.bloque{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 0%;
+}
+
+
+/*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
+
+footer {
+    background-color: #005677;
+    color: #ffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+
+
+
