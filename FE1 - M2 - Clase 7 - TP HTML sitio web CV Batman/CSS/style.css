@@ -1,0 +1,62 @@
+/* <<<<<  ᓚᘏᗢ  Header   >>>>> */
+
+header{
+    background-color: #E6E6E6;       
+}
+#foto_perfil {
+    width: 100px;
+    display: block;
+    margin:auto;
+}
+
+h1 {
+    background-color: #C4C4C4;
+    color: #005677;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*<<<<<  ᓚᘏᗢ  Main   >>>>> */
+
+h2 {
+    background-color: #C4C4C4;
+    color: #005677;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    padding-left: 1%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    display: inline;
+}
+
+main {
+    margin: 20%;
+}
+
+.debajo{
+    display: block;
+}
+
+
+
+/*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
+
+
+
+
+
+
