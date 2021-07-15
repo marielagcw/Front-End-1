@@ -8,18 +8,6 @@ header{
 
 }
 
-nav {
-    background-color: #ffff;
-    color: #FF668B;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: monospace;
-    font-style: italic;
-    padding: 2px;
-    
-}
-
 #foto_perfil {
     width: 100px;
     display: block;
@@ -87,6 +75,8 @@ p {
     font-family: monospace;
     color:#FF668B;
     display:inline;
+    font-size: 20px;
+    text-align: center;
 }
 
 main {
