@@ -1,121 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap');
+
 /* <<<<<  ᓚᘏᗢ  Header   >>>>> */
 
-header{
+header {
     background-color: #FF668B;
     background-image: url(../img/portada\ IN.png);
     background-attachment: fixed;
-
-
-}
-
-#foto_perfil {
-    width: 100px;
-    display: block;
-    margin:auto;
+    font-family: "Dancing Script", cursive;
 }
 
 h1 {
     background-color: #FF668B;
     color: #ffff;
-    text-align: center;
-    text-transform: uppercase;
     font-size: 30px;
-    font-family: cursive;
+    font-family: "Dancing Script", cursive;
     padding:20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.heart{
+    color: white;
+    display: inline;
+    font-size: 25px;
+    text-align: center;
 }
 
 /*<<<<<  ᓚᘏᗢ  Main   >>>>> */
 
-h2 {
-    background-color: #FF668B;
-    color: #ffff;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    display: block;
-    padding-left: 1%;
-    font-size: 15px;
-    font-family:cursive;
-    padding: 5px;
-}
-
-.subtitulo1 {
-    font-family:monospace;
-    color: #FF668B;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    display:inline;
-}
-
-.subtitulo2 {
-    font-family: monospace;
+main {
     color:#FF668B;
+    font-family: raleway, monospace;
     font-size: 15px;
-    font-weight: bold;
-    display:inline;
-}
-
-.subtitulo3 {
-    font-family: monospace;
-    color:#FF668B;
-    font-size: 15px;
-    font-weight: bold;
-    display: inline;
-}
-
-.description{
-    font-family: monospace;
-    color:#FF668B;
-    display: inline;
-    margin-left:initial
-    
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 p {
-    font-family: monospace;
-    color:#FF668B;
-    display:inline;
-    font-size: 20px;
-    text-align: center;
+    text-align: justify;
+    font-size: 20px;;
 }
 
-main {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 80px;
+.imagenes{
+    margin-left: 10%;
 }
-
-.bloque{
-    font-family:cursive;
-    color:#ffff;
-    font-size: 15px;
-    display: inline-block;
-    margin-bottom: 0%;
-}
-
-i{
-    color: #FF668B;
+.imagenes img {
+    width: 200px;
+    display: inline;
+    padding: 20px;
 }
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
 footer {
     background-color: #FF668B;
+    color: #ffff;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
     padding:10px;  
     text-align: center; 
-}
-#social{
-    color: white;
-
-}
-#telefono{
-    color: #ffff;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: cursive;
+    text-transform: capitalize;
 }
 
-
-
-
+footer p {
+    text-align:center;
+    font-size:30px;
+    display: inline;
+}

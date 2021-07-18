@@ -1,23 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap');
+
 /* <<<<<  ᓚᘏᗢ  Header   >>>>> */
 
-header{
+header {
     background-color: #FF668B;
     background-image: url(../img/portada\ IN.png);
     background-attachment: fixed;
-
-
-}
-
-nav {
-    background-color: #ffff;
-    color: #FF668B;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: monospace;
-    font-style: italic;
-    padding: 2px;
-    
+    font-family: "Dancing Script", cursive;
 }
 
 #foto_perfil {
@@ -29,103 +18,119 @@ nav {
 h1 {
     background-color: #FF668B;
     color: #ffff;
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+    padding:20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+nav {
+    background-color: #ffff;
+    color: #FF668B;
+    font-size: 25px;
+    font-family: monospace;
+    font-style: italic;
+    padding: 2px;
     text-align: center;
     text-transform: uppercase;
+}
+
+header nav a {
+    color:#FF668B;
+    font-family: "Dancing Script", cursive;
     font-size: 30px;
-    font-family: cursive;
-    padding:20px;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+
+.heart{
+    color:#FF668B;
+    font-size: 15px;
 }
 
 /*<<<<<  ᓚᘏᗢ  Main   >>>>> */
 
-h2 {
+main {
+    color:#FF668B;
+    font-family: raleway, monospace;
+    font-size: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+main h2 {
     background-color: #FF668B;
     color: #ffff;
-    text-transform: uppercase;
-    letter-spacing: 5px;
     display: block;
-    padding-left: 1%;
+    font-family: raleway, monospace;
     font-size: 15px;
-    font-family:cursive;
+    letter-spacing: 5px;
     padding: 5px;
+    padding-left: 1%;
+    text-transform: uppercase;
 }
 
 .subtitulo1 {
-    font-family:monospace;
     color: #FF668B;
-    font-size: 15px;
+    display:inline;
+    font-family:raleway, monospace;
+    font-size: 18px ;
     font-style: italic;
     font-weight: bold;
-    display:inline;
-}
-
-.subtitulo2 {
-    font-family: monospace;
-    color:#FF668B;
-    font-size: 15px;
-    font-weight: bold;
-    display:inline;
-}
-
-.subtitulo3 {
-    font-family: monospace;
-    color:#FF668B;
-    font-size: 15px;
-    font-weight: bold;
-    display: inline;
-}
-
-.description{
-    font-family: monospace;
-    color:#FF668B;
-    display: inline;
-    margin-left:initial
-    
-}
-
-p {
-    font-family: monospace;
-    color:#FF668B;
-    display:inline;
-}
-
-main {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 80px;
-}
-
-.bloque{
-    font-family:cursive;
-    color:#ffff;
-    font-size: 15px;
-    display: inline-block;
-    margin-bottom: 0%;
 }
 
 i{
     color: #FF668B;
+    font-size:12px;
+}
+
+p {
+    color:#FF668B;
+    display:inline;
+    font-size: 16px;
+}
+
+.subtitulo2 {
+    color:#FF668B;
+    display:inline;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description{
+    color:#FF668B;
+    display: inline;
+    font-size: 16px;
+    margin-left:initial    
+}
+
+.subtitulo3 {
+    color:#FF668B;
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
 footer {
     background-color: #FF668B;
+    color: #ffff;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
     padding:10px;  
     text-align: center; 
+    text-transform: capitalize;
 }
-#social{
+
+a {
+    text-decoration: none;
+}
+
+.social{
     color: white;
-
+    font-size: 35px;
+    padding-left: 5px;
 }
-#telefono{
-    color: #ffff;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: cursive;
-}
-
-
-
-
