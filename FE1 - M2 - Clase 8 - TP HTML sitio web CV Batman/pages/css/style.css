@@ -19,7 +19,9 @@ h1 {
     text-transform: capitalize;
 }
 
-
+header a {
+    text-decoration: none;
+}
 .heart{
     color: white;
     display: inline;
