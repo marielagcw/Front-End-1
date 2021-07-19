@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/* <<<<<   ᓚᘏᗢ Header     >>>>> */
+
+header {
+    color: #ffff;
+    font-family: "roboto", sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+}
+section.menu_superior {
+    background-color: #222222;
+    background-size: 20px;
+}
+
+header section{
+    background-color: #f0a83e;
+    background-size:62px;
+    font-size: 13px; 
+}
+
+nav.menu{    
+    font-family: "roboto", sans-serif;
+    font-size: 13px;
+}
+
+/* <<<<<   ᓚᘏᗢ Main     >>>>> */
+
+main{
+    color: #3c2313;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+}
+
+.banner {
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    text-align: center;    
+}
+
+.bienvenida{
+    font-size: 30px;
+}
+
+h1{
+    background-color: #f0a83e;
+    color: #ffff;
+    display: inline;
+}
+
+.destacados{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2{
+    color: #666666;
+    font-size: 15px;
+}
+
+p{
+    color: #3C2313;
+    font-size:15px;
+}
+
+/* <<<<<   ᓚᘏᗢ Footer     >>>>> */
+
+footer{
+    background-color: #3C2313;
+    background-size: cover;
+    color: #ffff;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+}
+
+footer p i {
+    color:#ffff;
+    font-family: "roboto", sans-serif;
+    font-size:20px;
+}
+
+footer p{
+    font-size: 10px;
+    color:#8A8787;
+}
+.derechos{
+    background-color: #222222;
+    font-size: 10px;
+    text-align: center;
+}
