@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 /* <<<<<   ᓚᘏᗢ Header     >>>>> */
 
 header {
@@ -33,9 +40,7 @@ main{
 }
 
 .banner {
-    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
-    background-repeat: no-repeat;
-    background-size:cover;
+    
     height: 500px;
     text-align: center;    
 }
