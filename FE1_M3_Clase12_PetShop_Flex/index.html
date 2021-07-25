@@ -9,72 +9,104 @@
         <title>FrontCat&Dog</title>
     </head>
     <body>
+        
         <header>
-            <section class = "menu_superior">
+            <section class="anuncios">
+                
                 <span>Grandes ofertas en comederos</span>
-                <ul class="menu_superior" type="none";>
-                    <li>Español</li>
-                    <li>$Arg</li>
+                
+                <ul type="none";>
+                    <li>Español</li><i class="fas fa-chevron-down"></i>
+                    <li>$Arg</li><i class="fas fa-chevron-down"></i>
                 </ul>
-            </section>  
-            <section class = "submenu">
+            </section>
+
+            <section class = "menu">
+                
                 <img id="logo" src="img/Logo.png" alt="Logo de la empresa FrontCat&Dog">
-                <nav class="menu"> 
+                
+                <nav> 
                     <ul type = "none";>
-                        <li><i class="fas fa-paw">Categorías</i></li>
-                        <li><i class="fas fa-paw">Pets</i></li>
-                        <li><i class="fas fa-paw">Nosotros</i></li>
-                        <li><i class="fas fa-paw">Contactanos</i></li>
+                        <!-- Importante: colocar primero el ícono solo y después el <li> con su texto para que sea más sencillo acomodarlos después en el CSS-->
+                        <i class="fas fa-paw"></i><li>Categorías</li>
+                        <i class="fas fa-paw"></i><li>Pets</li>
+                        <i class="fas fa-paw"></i><li>Nosotros</li>
+                        <i class="fas fa-paw"></i><li>Contactanos</li>
                     </ul>
                 </nav>
             </section>
         </header>
+
         <main>
+            
             <section class = "banner">
-                <p class="bienvenida">¡Es un placer tenerte aquí!</p>
-                <p>¡Comederos en descuento!</p>
-                <h1>COMEDEROS</h1>
+                <div>
+                    <p class="bienvenida">¡Es un placer tenerte aquí!</p>
+                    <p>¡Comederos en descuento!</p>
+                    <h1>COMEDEROS</h1>
+                </div>
             </section>
-            <section>
+
+            <section class="destacados">
                 <img src="img/pawprint 1.png" alt="huella de patita">
                 <p class="destacados">Productos destacados</p>
                 <h2>Comederos - Accesorios - Comida</h2>
-                <article>
-                    <img src="img/churrasquito.png" alt="churrasquitos">
-                    <p>Juguete churrasquito</p>
-                    <p>$150</p>
-                </article>
-                <article>
-                    <img src="img/comedero.png" alt="comedero">
-                    <p>Juguete churrasquito</p>
-                    <p>$150</p>
-                </article>
-                <article>
-                    <img src="img/Huesito.png" alt="huesito">
-                    <p>Juguete churrasquito</p>
-                    <p>$150</p>
-                </article>
             </section>
+
+            <section class="productos">            
+                    <article>
+                        <img src="img/churrasquito.png" alt="churrasquitos">
+                        <p>Juguete churrasquito</p>
+                        <p class="precios">$150</p>
+                    </article>
+
+                    <article>
+                        <img src="img/comedero.png" alt="comedero">
+                        <p>Juguete churrasquito</p>
+                        <p class="precios">$150</p>
+                    </article>
+
+                    <article>
+                        <img src="img/Huesito.png" alt="huesito">
+                        <p>Juguete churrasquito</p>
+                        <p class="precios">$150</p>
+                    </article>
+            </section>
+
+            <section class="contacto">
+                <div class="contacto"> 
+                    <p class="titulo">Contáctanos</p>
+                    <p class="formulario">Nombre y apellido</p>
+                    <p class="formulario">Ingresá tu correo electrónico</p>
+                    <p class="formulario">Teléfono</p>
+                    <div class="botones">
+                        <p id="resetear">Resetear</p>
+                        <p id="enviar">Enviar</p>
+                    </div>
+                </div>
+            </section>
+
         </main>
+       
         <footer>
-                <section class = "iconos_sociales">
-                    <p>
-                        <i class="fas fa-map-marker-alt">
+            <section class="suscripciones">
+                <i class="far fa-envelope"></i>
+                <p>Suscríbete para más novedades</p>
+                <p>Ingresá tu correo electronico</p>
+                <p>Suscribirme</p>
+            </section>   
+            <section class = "iconos_sociales">
+                    <p><i class="fas fa-map-marker-alt">
                             Localidad
-                        </i>
-                    </p>  
+                        </i></p>  
                         <p>Calle - Provincia</p>
-                    <p>
-                        <i class="fas fa-phone">
+                    <p><i class="fas fa-phone">
                             Teléfono
-                        </i>
-                    </p>
+                        </i></p>
                         <p>Número de teléfono</p>
-                    <p>
-                        <i class="fas fa-at">
+                    <p><i class="fas fa-at">
                             Correo Electrónico  
-                        </i>
-                    </p>
+                        </i></p>
                         <p>Dirección de Correo</p>
                     <img src="./img/Logo2.png" alt="logo">
                     <p class="derechos"> Todos los derechos reservados Front End</p>

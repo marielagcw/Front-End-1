@@ -6,35 +6,59 @@
     box-sizing: border-box;
 }
 
+/*
+Organización dentro de cada categoría
+-> background
+-> fuente
+-> caja -> tamaño/borde/estilo -> margen/padding -> position
+->flex -> display -> main axis -> alineación -> cross axis -> alineación 
 
 /* <<<<<   ᓚᘏᗢ Header     >>>>> */
 
 header {
-    color: #ffff;
-    font-family: "roboto", sans-serif;
-    font-size: 10px;
-    font-weight: normal;
+    font-family: roboto, sans-serif;
+    color: #F3F3F3;
 }
 
-header section{
-    background-color: #f0a83e;
-    background-size:62px;
-    font-size: 13px; 
-}
-
-section.menu_superior {
+section.anuncios{
     background-color: #222222;
-    background-size: 20px;
+    font-size: 10px;
+    height: 20px; /* altura de la caja */
+    padding-left: 90px;
+    padding-right:50px;
     display: flex;
-    justify-content: space-between;
-    height: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: space-between; /* acomoda cada elemento en los extremos y luego distribuye el espacio en el medio. Por defecto el flex toma como main axis el eje horizontal */
+    align-items: center; /* alínea los items sobre el cross axis */
 }
 
-ul.menu_superior{
+section.anuncios ul {
+    width: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between; /* primero le definí tamaño a la caja para que después el flex me distribuya los espacios dentro */ 
+}
+
+section.menu {
+    background-color: #f0a83e;
+    color: #F3F3F3;
+    font-size: 13px;
+    height: 62px;
+    padding-left: 40px; 
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+section.menu nav ul{
+    display: flex;
+    flex-direction: row; /* se cambia el flex direction porque por defecto en las listas los items se alinean como columnas */
+}
+
+
+section.menu nav ul li{ /*importante: si coloco el <i> dentro del <li> me va a tomar las propiedades de fuente del ícono, por eso es mejor dejar el ícono solo para manejarlo como un elemento independiente */
+    margin-left: 5px;
+    margin-right: 25px;;
 }
 
 section.submenu{    
@@ -52,51 +76,152 @@ section.submenu{
     width: 165px;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-}
 
 /* <<<<<   ᓚᘏᗢ Main     >>>>> */
 
 main{
-    color: #3c2313;
+    color: #3C2313;
     font-family: "roboto", sans-serif;
-    font-size: 16px;
 }
 
-.banner {
+section.banner {
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+section.banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.bienvenida{
+section.banner p.bienvenida{
+    background-color: #ffffff;
     font-size: 30px;
+    text-align: center;
+    height: 54px;
+    width: 365px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+section.banner p {
+    font-size: 16px;
+    text-align: center;
+    height: 54px;
+    width: 365px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
     background-color: #f0a83e;
     color: #ffff;
-    display: inline;
+    font-size: 16px;
+    text-align: center;
+    height: 49px;
+    width: 141px;
+    border-radius: 5px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.destacados{
-    font-size: 40px;
-    font-weight: bold;
+section.destacados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+ p.destacados{
+     font-size: 40px;
+     font-weight: bold;
+ }
 h2{
     color: #666666;
     font-size: 15px;
 }
 
-p{
+section.productos{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+
+article p{
     color: #3C2313;
     font-size:15px;
+    text-align: center;
+}
+
+
+p.precios{
+    font-size: 15px;
+    color:#F0A83E;
+}
+
+section.contacto div.contacto{
+    width: 360px;
+    height: 264px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+section.contacto{
+    margin: 75px;
+    display:flex;
+    justify-content: center;
+}
+
+p.titulo{
+    color: #3C2313;
+    font-size: 25px;
+}
+
+p.formulario {
+    background-color:#3C2313;
+    color: #ffffff;
+    font-size: 9px;
+    height: 40px;
+    width: 340px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+div.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+#resetear, #enviar{
+    background-color: #8A8787;
+    color: #ffffff;
+    height: 34px;
+    width: 110px;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.botones #enviar{
+    background-color:#F0A83E;
 }
 
 /* <<<<<   ᓚᘏᗢ Footer     >>>>> */
@@ -107,6 +232,14 @@ footer{
     color: #ffff;
     font-family: "roboto", sans-serif;
     font-size: 16px;
+}
+
+/* Desde aquí en adelante pendiente de terminar ↓ */
+
+footer section.suscripciones {
+    background-color: #F0A83E;
+    height: 60px;
+    display: flex;
 }
 
 footer p i {
