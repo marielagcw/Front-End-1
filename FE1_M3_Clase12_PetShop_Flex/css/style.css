@@ -15,10 +15,6 @@ header {
     font-size: 10px;
     font-weight: normal;
 }
-section.menu_superior {
-    background-color: #222222;
-    background-size: 20px;
-}
 
 header section{
     background-color: #f0a83e;
@@ -26,9 +22,39 @@ header section{
     font-size: 13px; 
 }
 
-nav.menu{    
+section.menu_superior {
+    background-color: #222222;
+    background-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul.menu_superior{
+    display: flex;
+    flex-direction: row;
+}
+
+section.submenu{    
     font-family: "roboto", sans-serif;
     font-size: 13px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    height: 23px;
+    width: 165px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
 }
 
 /* <<<<<   ᓚᘏᗢ Main     >>>>> */
@@ -40,10 +66,13 @@ main{
 }
 
 .banner {
-    
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
-    text-align: center;    
+    text-align: center;
 }
+
 
 .bienvenida{
     font-size: 30px;
