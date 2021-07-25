@@ -1,91 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap');
 
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
 /* <<<<<  ᓚᘏᗢ  Header   >>>>> */
+
 
 header{
     background-color: #FF668B;
-    margin:0%;
-}
-
-
-header h1 {
-    text-align: center;
-    font-size:50px;
     color: white;
+    font-size:25px;
     font-family: "dancing script", cursive;
-    margin:0%;
-    padding: 25px;
-    
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-nav {
-    margin:0%;
     text-align: center;
-    font-size: 30px;
-    font-family: Raleway, sans-serif;
-    color: white;
-    
+    padding: 25px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
-
-hr {
-    margin:0%;
-}
-
 
 
 /*<<<<<  ᓚᘏᗢ  Main   >>>>> */
 
-body{
-    margin:0%;
-}
-body main {
-    height: 300px;
-    font-family: Raleway, sans-serif;
-    background-image: url(../img/portada\ IN.png);
+main {
+    background-image:url("../img/portada\ IN.png");
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-repeat:no-repeat;
     background-size: cover;
-    margin:0px;
-    padding: 100px;
-}
-
-main ul{
-    margin:0%;
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
     text-align: center;
-    background-color: rgba(255,255,255, 0.8);
-
 }
 
-main ul li a  {
-    color:#FF668B;
-    text-align: center;
+ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+h2, a  {
+    color:#ffffff;
     font-size: 25px;
-}
+    text-decoration: none;
+    text-align: center; 
+    background-color:rgb(255, 102, 139, 0.8);
+    border-radius: 7px;
+    padding: 30px;
+    margin: 30px;
+    display: inline-flex;
+    flex-wrap: wrap;
 
-
-p {
-    margin:0%;
-}
-
-i {
-    color:#FF668B;
-    font-size: 25px;
 }
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
 footer {
+    color: white;
     font-family: "Dancing Script", cursive;
     font-size: 25px;
-    color: white;
     background-color:#FF668B;
-    margin:0px;
 }
+
 footer img{
     width: 100px;
     margin-left: 45%;
