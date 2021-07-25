@@ -6,8 +6,6 @@
     padding:0px;
 }
 
-/* .................. <<< ᓚᘏᗢ Header >>> ...................... */
-
 /*
 Organización dentro de cada categoría
 -> background
@@ -15,6 +13,7 @@ Organización dentro de cada categoría
 -> caja -> tamaño/borde/estilo -> margen/padding -> position
 
 /* .................. <<< ᓚᘏᗢ Header >>> ...................... */
+
 
 p.promo {
     background-color: #1CD1B0;
