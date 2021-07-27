@@ -240,7 +240,16 @@ footer section.suscripciones {
     background-color: #F0A83E;
     height: 60px;
     display: flex;
+    justify-content: space-between;
 }
+
+section.suscripciones div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 
 footer p i {
     color:#ffff;
