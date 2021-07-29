@@ -139,20 +139,3 @@ footer p {
 }
 
 
-/* Adaptativo */
-
-@media screen  and (max-width: 480px){
-    body {
-        width:480px;
-    }
-    section{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-    }
-    
-    article{
-        margin-bottom: 15px;
-    }
-
-}
