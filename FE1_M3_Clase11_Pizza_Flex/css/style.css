@@ -129,3 +129,32 @@ footer img {
     width: 212px;
     height: 80px;
 }
+
+@media screen and (max-width:480px){
+    #superior::after{
+        color:#ffffff;
+        content: "\f0c9";
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        font-size: 1.5rem;
+        z-index: 10;
+    }
+    ul{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 85vw;
+    }
+    .promo{       
+        padding:0px;      
+    }
+    footer{
+        flex-direction: column;
+    }
+    ul{
+       align-items: center;
+    }
+}
