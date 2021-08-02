@@ -59,7 +59,7 @@ article {
 }
 
 article img.fondo {
-    border-radius: 16px, 16px, 0px, 0px;
+    border-radius: 16px 16px 0px 0px;
     height: 193px;
     width: 300px;     
 }

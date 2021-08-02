@@ -19,9 +19,9 @@ header {
     font-family: roboto, sans-serif;
     color: #F3F3F3;
 }
-
-section.anuncios{
+.anuncios{
     background-color: #222222;
+    color: #F3F3F3; /* para que la clase pueda usarse en otros elementos y siga habiendo contraste entre fondo y texto */
     font-size: 10px;
     height: 20px; /* altura de la caja */
     padding-left: 90px;
@@ -30,17 +30,14 @@ section.anuncios{
     justify-content: space-between; /* acomoda cada elemento en los extremos y luego distribuye el espacio en el medio. Por defecto el flex toma como main axis el eje horizontal */
     align-items: center; /* alínea los items sobre el cross axis */
 }
-
-section.anuncios ul {
+.anuncios ul {
     width: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* primero le definí tamaño a la caja para que después el flex me distribuya los espacios dentro */ 
 }
-
-section.menu {
+.menu {
     background-color: #f0a83e;
-    color: #F3F3F3;
     font-size: 13px;
     height: 62px;
     padding-left: 40px; 
@@ -49,19 +46,15 @@ section.menu {
     justify-content: space-between; 
     align-items: center;
 }
-
-section.menu nav ul{
+.menu nav ul{
     display: flex;
     flex-direction: row; /* se cambia el flex direction porque por defecto en las listas los items se alinean como columnas */
 }
-
-
-section.menu nav ul li{ /*importante: si coloco el <i> dentro del <li> me va a tomar las propiedades de fuente del ícono, por eso es mejor dejar el ícono solo para manejarlo como un elemento independiente */
+.menu nav ul li{ /*importante: si coloco el <i> dentro del <li> me va a tomar las propiedades de fuente del ícono, por eso es mejor dejar el ícono solo para manejarlo como un elemento independiente */
     margin-left: 5px;
     margin-right: 25px;;
 }
-
-section.submenu{    
+.submenu{    
     font-family: "roboto", sans-serif;
     font-size: 13px;
     height: 62px;
@@ -70,12 +63,10 @@ section.submenu{
     justify-content: space-between;
     align-items: center;
 }
-
 #logo{
     height: 23px;
     width: 165px;
 }
-
 
 /* <<<<<   ᓚᘏᗢ Main     >>>>> */
 
@@ -83,8 +74,7 @@ main{
     color: #3C2313;
     font-family: "roboto", sans-serif;
 }
-
-section.banner {
+.banner {
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,14 +84,17 @@ section.banner {
     justify-content: flex-end;
     align-items: center;
 }
-
-section.banner div {
+.banner div {
+    font-size: 16px;
+    text-align: center;
+    height: 165px;
+    width: 365px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;    
 }
-
-section.banner p.bienvenida{
+.bienvenida{
     background-color: #ffffff;
     font-size: 30px;
     text-align: center;
@@ -110,17 +103,6 @@ section.banner p.bienvenida{
     border-radius: 5px;
     padding: 10px;
 }
-
-section.banner p {
-    font-size: 16px;
-    text-align: center;
-    height: 54px;
-    width: 365px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 h1{
     background-color: #f0a83e;
     color: #ffff;
@@ -134,71 +116,58 @@ h1{
     justify-content: center;
     align-items: center;
 }
-
-section.destacados{
+.destacados{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
- p.destacados{
+ .destacados p{
      font-size: 40px;
      font-weight: bold;
  }
-h2{
+ .destacados h2{
     color: #666666;
     font-size: 15px;
 }
-
-section.productos{
+.productos{
     display:flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px;
 }
-
-
-article p{
+.productos article{
     color: #3C2313;
     font-size:15px;
     text-align: center;
 }
-
-
 p.precios{
-    font-size: 15px;
     color:#F0A83E;
 }
 
-section.contacto div.contacto{
-    width: 360px;
-    height: 264px;
+.contacto {
+    margin: 75px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
     align-items: center;
 }
-section.contacto{
-    margin: 75px;
-    display:flex;
-    justify-content: center;
-}
-
 p.titulo{
     color: #3C2313;
     font-size: 25px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
 }
-
-p.formulario {
+ 
+.formulario{
     background-color:#3C2313;
     color: #ffffff;
     font-size: 9px;
     height: 40px;
     width: 340px;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
+    margin: 10px;
     display: flex;
     align-items: center;
 }
@@ -228,41 +197,80 @@ div.botones #enviar{
 
 footer{
     background-color: #3C2313;
-    background-size: cover;
     color: #ffff;
     font-family: "roboto", sans-serif;
-    font-size: 16px;
 }
 
-/* Desde aquí en adelante pendiente de terminar ↓ */
 
-footer section.suscripciones {
+.suscripciones {
     background-color: #F0A83E;
+    color: #ffffff;
+    font-size: 20px;
     height: 60px;
     display: flex;
     justify-content: space-between;
 }
-
-section.suscripciones div{
+.suscripciones div{
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-
-
-footer p i {
-    color:#ffff;
-    font-family: "roboto", sans-serif;
-    font-size:20px;
+footer p {
+    margin: 10px;
 }
 
-footer p{
+#boton_suscripcion{
+    width: 70px;    
+}
+
+#completar {
+    background-color: #ffffff;
+    color:#A0A0A0;
+    width: 271px;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img, .iconos_sociales{
+    font-size: 20px;
+    margin: 25px;
+}
+
+.iconos_sociales article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconos_sociales i{
+    background-color: #8A8787;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #786960;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    color: #8A8787;
     font-size: 10px;
-    color:#8A8787;
 }
-.derechos{
+
+#derechos {
     background-color: #222222;
     font-size: 10px;
     text-align: center;
+    height: 20px;
+    padding: 5px;
 }
