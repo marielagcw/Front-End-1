@@ -64,6 +64,7 @@ footer {
 }
 
 footer img{
+    opacity: 80%;
     width: 100px;
     margin-left: 45%;
 }

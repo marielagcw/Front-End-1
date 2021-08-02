@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+Organización dentro de cada categoría
+-> background
+-> fuente
+-> caja -> tamaño/borde/estilo -> margen/padding -> position
+->flex -> display -> main axis -> alineación -> cross axis -> alineación 
+
+/* <<<<<   ᓚᘏᗢ Header     >>>>> */
+
+header {
+    font-family: roboto, sans-serif;
+    color: #F3F3F3;
+}
+.anuncios{
+    background-color: #222222;
+    color: #F3F3F3; /* para que la clase pueda usarse en otros elementos y siga habiendo contraste entre fondo y texto */
+    font-size: 10px;
+    height: 20px; /* altura de la caja */
+    padding-left: 90px;
+    padding-right:50px;
+    display: flex;
+    justify-content: space-between; /* acomoda cada elemento en los extremos y luego distribuye el espacio en el medio. Por defecto el flex toma como main axis el eje horizontal */
+    align-items: center; /* alínea los items sobre el cross axis */
+}
+.anuncios ul {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* primero le definí tamaño a la caja para que después el flex me distribuya los espacios dentro */ 
+}
+.menu {
+    background-color: #f0a83e;
+    font-size: 13px;
+    height: 62px;
+    padding-left: 40px; 
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.menu nav ul{
+    display: flex;
+    flex-direction: row; /* se cambia el flex direction porque por defecto en las listas los items se alinean como columnas */
+}
+.menu nav ul li{ /*importante: si coloco el <i> dentro del <li> me va a tomar las propiedades de fuente del ícono, por eso es mejor dejar el ícono solo para manejarlo como un elemento independiente */
+    margin-left: 5px;
+    margin-right: 25px;;
+}
+.submenu{    
+    font-family: "roboto", sans-serif;
+    font-size: 13px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    height: 23px;
+    width: 165px;
+}
+
+/* <<<<<   ᓚᘏᗢ Main     >>>>> */
+
+main{
+    color: #3C2313;
+    font-family: "roboto", sans-serif;
+}
+.banner {
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.banner div {
+    font-size: 16px;
+    text-align: center;
+    height: 165px;
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;    
+}
+.bienvenida{
+    background-color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    height: 54px;
+    width: 365px;
+    border-radius: 5px;
+    padding: 10px;
+}
+h1{
+    background-color: #f0a83e;
+    color: #ffff;
+    font-size: 16px;
+    text-align: center;
+    height: 49px;
+    width: 141px;
+    border-radius: 5px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.destacados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .destacados p{
+     font-size: 40px;
+     font-weight: bold;
+     text-align: center;
+ }
+ .destacados h2{
+    color: #666666;
+    font-size: 15px;
+}
+.productos{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.productos article{
+    color: #3C2313;
+    font-size:15px;
+    text-align: center;
+}
+p.precios{
+    color:#F0A83E;
+}
+
+.contacto {
+    margin: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p.titulo{
+    color: #3C2313;
+    font-size: 25px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.formulario{
+    background-color:#3C2313;
+    color: #ffffff;
+    font-size: 9px;
+    height: 40px;
+    width: 340px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+div.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+#resetear, #enviar{
+    background-color: #8A8787;
+    color: #ffffff;
+    height: 34px;
+    width: 110px;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.botones #enviar{
+    background-color:#F0A83E;
+}
+
+/* <<<<<   ᓚᘏᗢ Footer     >>>>> */
+
+footer{
+    background-color: #3C2313;
+    color: #ffff;
+    font-family: "roboto", sans-serif;
+}
+
+
+.suscripciones {
+    background-color: #F0A83E;
+    color: #ffffff;
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.suscripciones div{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#boton_suscripcion{
+    width: 70px;    
+}
+
+#completar {
+    background-color: #ffffff;
+    color:#A0A0A0;
+    width: 271px;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img, .iconos_sociales{
+    font-size: 20px;
+    margin: 25px;
+}
+
+.iconos_sociales article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconos_sociales i{
+    background-color: #8A8787;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #786960;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    color: #8A8787;
+    font-size: 10px;
+}
+
+#derechos {
+    background-color: #222222;
+    background-size: 100%;
+    font-size: 10px;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+}
+
+/* <<<<<   ᓚᘏᗢ Responsive     >>>>> */
+
+@media screen and (max-width: 480px){
+    .anuncios, nav{
+        display: none;
+    }
+    .menu::after {
+        color:#ffffff;
+        content: "\f0c9";
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        font-size: 1.5rem;
+        z-index: 10;
+        display: flex;
+        margin-right: 1.5rem;
+    }
+    .menu{
+        padding:0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner{
+        justify-content: center;
+    }
+    .productos{
+        flex-wrap: wrap;
+    }
+    .suscripciones{
+        height: 100%;
+        flex-direction: column;
+    }
+    footer section{
+        flex-direction: column;
+    }
+    footer section img{
+        order: -1;
+    }
+}
