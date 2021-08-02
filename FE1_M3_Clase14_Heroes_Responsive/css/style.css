@@ -15,18 +15,18 @@ Organización dentro de cada categoría
 /* .................. <<< ᓚᘏᗢ Header >>> ...................... */
 
 
-p.promo {
+aside.promo {
     background-color: #1CD1B0;
     color: #000000;
     font-family: "roboto", sans-serif;
     font-size: 15px;
     line-height: 17.58px;
-    padding: 10px; 
-    
+    padding: 10px;     
 }
-
-
-
+header{
+    position: sticky; top: 0px;
+    z-index: 15;
+}
 h1 {
     background-color: #00669F;
     font-family: "roboto", sans-serif;
@@ -34,23 +34,23 @@ h1 {
     line-height: 46.88px;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
     padding: 26px;
-    position: sticky; top: 0px;
-    z-index: 15;
 }
 /* .................. <<< ᓚᘏᗢ Main >>> ...................... */
 
 main {
-    font-family: "roboto", sans-serif;
+    font-family: "roboto", sans-serif; 
 }
 
 section {
    margin: 150px;
+   display: flex;
+   justify-content: center;
 }
 
 article {
     background-color: #F3F3F3;
     display: inline-block;
-    height: 530px;
+    height: 630px;
     width: 300px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: 15px;
@@ -88,11 +88,10 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    padding-top:20px;
-    position: absolute;
-    bottom: 227px;
-    left: 10px;
-    right: 10px;
+    margin-top: 55px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 article p {
@@ -102,12 +101,10 @@ article p {
     line-height: 19px;
     text-transform: capitalize;
     text-align: justify;
-    height: 113px;
+    height: 200px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    position: relative;
-    top: 100px;
 }
 
 p.botones{
@@ -134,7 +131,19 @@ footer p {
     color: #FFF9F9;
     font-family: "roboto", sans-serif;
     font-size: 16px;
+    text-align: center;
     line-height: 18.75px;
     padding: 16px;
 }
 
+@media screen and (max-width: 768px){
+    section{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article{
+        margin-bottom: 20px;
+    }
+}
