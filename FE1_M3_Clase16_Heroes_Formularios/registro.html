@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Héroes</title>
+</head>
+
+<body>
+    <aside class="promo">Descuentos 20%</aside>
+    <header class="login">
+        <img id="icono_tienda" src="./img/tienda.png" alt="tienda">
+        <h1>Nombre tienda</h1>
+    </header>
+    <main>
+        <form action="index.html" enctype="multipart/form-data" method="POST">
+            <section class="login_main">
+                <h2>Registro</h2>
+                <input type="text" name="nya" placeholder="Nombre y Apellido" />
+                <input type="email" name="email" placeholder="Correo Electrónico" />
+                <input type="password" name="contraseña" placeholder="**********" />
+                <input list="lista_pais" name="país" placeholder="país">
+                    <datalist id="lista_pais" >
+                        <option value="Argentina">
+                        <option value="Colombia">
+                        <option value="Chile">
+                    </datalist>
+                </input>                
+                <div>
+                    <button type="reset" name="Resetear"> Resetear</button>
+                    <button type="submit" name="entrar">Entrar</button>
+                </div>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>

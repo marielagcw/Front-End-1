@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+
+/*
+Organización dentro de cada categoría
+-> background
+-> fuente
+-> caja -> tamaño/borde/estilo -> margen/padding -> position
+
+/* .................. <<< ᓚᘏᗢ HEADER >>> ...................... */
+
+/* .................. <<<  Index ᓚᘏᗢ >>> ...................... */
+
+aside.promo {
+    background-color: #1CD1B0;
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 15px;
+    line-height: 17.58px;
+    padding: 10px;     
+}
+header{
+    position: sticky; top: 0px;
+    z-index: 15;
+}
+h1 {
+    background-color: #00669F;
+    font-family: "roboto", sans-serif;
+    font-size: 40px;
+    line-height: 46.88px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    padding: 26px;
+}
+
+/* .................. <<<  Login y registro ᓚᘏᗢ >>> ...................... */
+.login{
+    background-color: #00669F;
+    color:white;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+}
+.login h1{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/* .................. <<< ᓚᘏᗢ MAIN >>> ...................... */
+
+/* .................. <<<  Index ᓚᘏᗢ >>> ...................... */
+
+main {
+    font-family: "roboto", sans-serif; 
+}
+
+section {
+   margin: 150px;
+   display: flex;
+   justify-content: center;
+}
+
+article {
+    background-color: #F3F3F3;
+    display: inline-block;
+    height: 630px;
+    width: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+article img.fondo {
+    border-radius: 16px 16px 0px 0px;
+    height: 193px;
+    width: 300px;     
+}
+
+article i {
+    color: #CC2424;
+    font-size: 26px;
+    position: absolute;
+    left:20px;
+    top: 15px;
+}
+
+article img.perfil {
+    border-radius: 50%;
+    height: 118px;
+    width: 120px;
+    position: absolute;
+    left: 90px;
+    top: 128px;
+    z-index: 10;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 55px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: capitalize;
+    text-align: justify;
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p.botones{
+    background-color: #00669F;
+    color: #F3F3F3;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    height:48px;
+    width:128px;
+    padding:10px;
+    margin-top: 35px;
+    margin-left: 85px;
+}
+
+/* .................. <<<  Login y registro ᓚᘏᗢ >>> ...................... */
+
+section.login_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+section.login_main h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+input{
+    width:38rem;
+    height: 3.75rem ;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+input.botones{
+    background-color: #1CD1B0;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 23px;    
+}
+
+.login_main select{
+    width:38rem;
+    height: 3.75rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* .................. <<< ᓚᘏᗢ FOOTER >>> ...................... */
+
+footer p {
+    background-color: #00669F;
+    color: #FFF9F9;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 18.75px;
+    padding: 16px;
+}
+
+@media screen and (max-width: 768px){
+    section{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article{
+        margin-bottom: 20px;
+    }
+}
