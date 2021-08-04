@@ -17,7 +17,8 @@
         <h1>Nombre tienda</h1>
     </header>
     <main>
-        <form action="index.html" enctype="multipart/form-data" method="POST">
+        <form action="index.html" enctype="multipart/form-data" method="GET">
+             <!-- Después hay que cambiarlo a POST! -->
             <section class="login_main">
                 <h2>Registro</h2>
                 <input type="text" name="nya" placeholder="Nombre y Apellido" />
@@ -32,7 +33,7 @@
                 </input>                
                 <div>
                     <button type="reset" name="Resetear"> Resetear</button>
-                    <button type="submit" name="entrar">Entrar</button>
+                    <button class="botones" type="submit" name="entrar">Entrar</button>
                 </div>
             </section>
         </form>

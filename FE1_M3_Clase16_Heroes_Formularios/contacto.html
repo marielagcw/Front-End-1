@@ -17,14 +17,18 @@
         <h1>Nombre tienda</h1>
     </header>
     <main>
-        <form action="index.html" enctype="multipart/form-data" method="POST">
+        <form action="index.html" enctype="multipart/form-data" method="GET">
+             <!-- Después hay que cambiarlo a POST! -->
             <section class="login_main">
-                <h2>Login</h2>
+                <h2>Contacto</h2>
+                <input type="text" name="nya" placeholder="Nombre y Apellido">
                 <input type="email" name="usuario" placeholder="Jonathan@digitalhouse.com">
-                <input type="password" name="contraseña" placeholder="**********">
-                <input class="botones" type="submit" name="entrar" value="Entrar">
-                <p><span>¿No tenés una cuenta? </span>Registrarme</p>
-            </section>        
+                <textarea class="texto_comentario" name="comentario" placeholder="Hola!, me gustaría recibir información sobre el muñeco de Batman, ya que como saben soy muy fanático de bruce wayne. Gracias!"></textarea>
+                <div>
+                    <button type="reset" name="Resetear"> Resetear</button>
+                    <button class="botones" type="submit" name="entrar">Entrar</button>
+                </div>
+            </section>
         </form>
     </main>
     <footer>

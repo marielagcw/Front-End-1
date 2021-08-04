@@ -25,6 +25,7 @@ aside.promo {
     padding: 10px;     
 }
 header{
+    color: white;
     position: sticky; top: 0px;
     z-index: 15;
 }
@@ -35,6 +36,22 @@ h1 {
     line-height: 46.88px;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
     padding: 26px;
+}
+
+nav{
+    background-color: #00669F;
+    font-family: "roboto", sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
 /* .................. <<<  Login y registro ᓚᘏᗢ >>> ...................... */
@@ -163,7 +180,8 @@ input.botones{
     background-color: #1CD1B0;
     font-weight: 700;
     font-size: 24px;
-    border-radius: 23px;    
+    border-radius: 23px;
+    border-style: none;    
 }
 
 .login_main select{
@@ -172,6 +190,29 @@ input.botones{
     margin: 1rem;
     padding: 1rem;
 }
+
+.login_main div button{
+    background-color: #888888;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 23px;
+    border-style: none;  
+}
+
+div button.botones{
+    color: black;
+    background-color:#1CD1B0 ;
+}
+
+textarea.texto_comentario {
+    font-size: 15px;
+    width: 38rem;
+    height: 38rem;
+    margin: 20px;   
+}
+
 
 /* .................. <<< ᓚᘏᗢ FOOTER >>> ...................... */
 
