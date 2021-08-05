@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap');
 
+:root{
+    --color_principal: #F59E9B;
+    --color_secundario: #90B8E4;
+    --fuente_principal: "dancing script", cursive;
+    --fuente_secundaria: Raleway, sans-serif;
+}
+
 *{
     margin: 0px;
     padding:0px;
@@ -10,61 +17,85 @@
 
 
 header{
-    background-color: #FF668B;
+    background-color: var(--color_principal);
+    opacity: 80%;
     color: white;
-    font-size:25px;
-    font-family: "dancing script", cursive;
+    font-size: 1.5rem;
+    font-family: var(--fuente_principal);
     text-align: center;
-    padding: 25px;
+    padding: 1.25rem;
     position: sticky;
     top: 0px;
     z-index: 10;
 }
 
 
+p span i.fas {
+    color: rgb(224, 72, 72);
+}
+
+
 /*<<<<<  ᓚᘏᗢ  Main   >>>>> */
 
 main {
-    background-image:url("../img/portada\ IN.png");
+    background-image:url("../img/background\ Mariela\ GC.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment:fixed;
     color: #ffffff;
-    font-family: Raleway, sans-serif;
+    font-family: var(--fuente_secundaria);
     text-align: center;
 }
 
-ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-h2, a  {
-    color:#ffffff;
-    font-size: 25px;
+
+section div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2{
+    color:var(--color_secundario);
+    font-family: var(--fuente_principal);
+    font-size: 2.5rem;
     text-decoration: none;
     text-align: center; 
-    background-color:rgb(255, 102, 139, 0.8);
+    opacity: 80%;
     border-radius: 7px;
-    padding: 30px;
-    margin: 30px;
-    display: inline-flex;
-    flex-wrap: wrap;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    border-style: dashed;
+    border-width:thin;
+    border-radius: 15px;
+    font-family: var(--fuente_secundaria);
+    font-size: 1.5rem;
+    color: var(--color_secundario);
+    text-decoration: none;
+    padding: 2rem;
+    margin: 2rem;
 
 }
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
 footer {
+    background-color:var(--color_principal);
     color: white;
     font-family: "Dancing Script", cursive;
-    font-size: 25px;
-    background-color:#FF668B;
-}
-
-footer img{
-    opacity: 80%;
-    width: 100px;
-    margin-left: 45%;
+    font-size: 2rem;
+    padding: 2rem;
 }
