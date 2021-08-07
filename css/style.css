@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap');
 
+
 :root{
     --color_principal: #F59E9B;
-    --color_secundario: #90B8E4;
+    --color_secundario: #4e8cce;
+    --color_fondo_suave_principal: #f59e9b41;
+    --color_fondo_suave_secundario: #90b9e41a;
     --fuente_principal: "dancing script", cursive;
     --fuente_secundaria: Raleway, sans-serif;
 }
@@ -12,6 +15,7 @@
     padding:0px;
     box-sizing: border-box;
 }
+
 
 /* <<<<<  ᓚᘏᗢ  Header   >>>>> */
 
@@ -29,8 +33,15 @@ header{
 }
 
 
-p span i.fas {
+i.fas {
     color: rgb(224, 72, 72);
+    margin-left: 0.5rem;
+    transition: transform 0.5s;
+}
+
+i.fas:hover{
+    transform:scale(1.5);
+    color:rgba(255, 0, 157, 0.925);
 }
 
 
@@ -68,21 +79,14 @@ section div{
 h2{
     color:var(--color_secundario);
     font-family: var(--fuente_principal);
-    font-size: 2.5rem;
-    text-decoration: none;
-    text-align: center; 
-    opacity: 80%;
-    border-radius: 7px;
+    font-size: 2.5rem; 
     margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 a{
-    border-style: dashed;
-    border-width:thin;
+    box-shadow: 0rem 0rem 1rem rgba(96, 99, 243, 0.3);
     border-radius: 15px;
     font-family: var(--fuente_secundaria);
     font-size: 1.5rem;
@@ -93,6 +97,15 @@ a{
 
 }
 
+a:hover{
+    background-color: var(--color_fondo_suave_principal);
+    font-weight: 900;
+}
+
+a:active{
+    border-radius: 100%;
+}
+
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
 footer {
@@ -101,4 +114,17 @@ footer {
     font-family: "Dancing Script", cursive;
     font-size: 2rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px){
+    a:hover{
+        background-color: white;
+        font-weight: normal;
+    }
+    a:action{
+        border-radius: 15px;
+    }
 }
