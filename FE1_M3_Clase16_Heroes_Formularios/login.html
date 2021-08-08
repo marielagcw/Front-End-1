@@ -12,12 +12,20 @@
 
 <body>
     <aside class="promo">Descuentos 20%</aside>
-    <header class="login">
-        <img id="icono_tienda" src="./img/tienda.png" alt="tienda">
-        <h1>Nombre tienda</h1>
+    <header class="formulario">
+        <div>
+            <img id="icono_tienda" src="./img/tienda.png" alt="tienda">
+            <h1>Nombre tienda</h1>
+        </div>
+        <nav id="menu">
+            <a href="login.html">Login</a>
+            <a href="registro.html">Registro</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="agregar.html">Agregar Superheroe</a>
+        </nav>
     </header>
     <main>
-        <form action="index.html" enctype="multipart/form-data" method="GET"> 
+        <form action="index.html" enctype="multipart/form-data" method="GET">
             <!-- Después hay que cambiarlo a POST! -->
             <section class="login_main">
                 <h2>Login</h2>
@@ -25,7 +33,7 @@
                 <input type="password" name="contraseña" placeholder="**********">
                 <input class="botones" type="submit" name="entrar" value="Entrar">
                 <p><span>¿No tenés una cuenta? </span>Registrarme</p>
-            </section>        
+            </section>
         </form>
     </main>
     <footer>

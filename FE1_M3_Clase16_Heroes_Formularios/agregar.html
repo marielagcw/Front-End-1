@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Héroes</title>
+</head>
+
+<body>
+    <aside class="promo">Descuentos 20%</aside>
+    <header class="formulario">
+        <div>
+            <img id="icono_tienda" src="./img/tienda.png" alt="tienda">
+            <h1>Nombre tienda</h1>
+        </div>
+        <nav id="menu">
+            <a href="login.html">Login</a>
+            <a href="registro.html">Registro</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="agregar.html">Agregar Superheroe</a>
+        </nav>
+    </header>
+    <main>
+        <form action="index.html" enctype="multipart/form-data" method="GET">
+            <!-- Después hay que cambiarlo a POST! -->
+            <section class="agregar">
+                <h2>Añadí tu super! </h2>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                <div>
+                    <div>
+                        <label for="nombre">*Nombre</label>
+                        <input id="nombre" type="text" name="nombre">
+                        <label for="fecha">Fecha</label>
+                        <input id="fecha" type="date" name="fecha">
+                        <textarea class="texto_comentario" name="descripción" placeholder="Descripción"></textarea>
+                    </div>
+                    <div>
+                        <label for="especie">*Especie</label>
+                        <input id="especie" list="lista_especie" name="especies" placeholder="Especie">
+                        <datalist id="lista_especie" name="lista_especie">
+                            <option value="Humano">
+                            <option value="Alien">
+                            <option value="Humano/Animal">
+                            <option value="Humano/Mutante">
+                        </datalist>
+                        </input>
+                        <label for="foto">Agregar Foto</label>
+                        <input id="foto" type="file" name="foto">
+                        <fieldset>
+                            <legend>Poderes</legend>
+                            <input id="volar" type="checkbox" name="poder_volar" value="Volar">
+                            <label for="volar">Volar <br></label>
+                            <input id="vista" type="checkbox" name="poder_vista_laser" value="vista_laser">
+                            <label for="vista">Vista de rayo láser <br></label>
+                            <input id="superinteligencia" type="checkbox" name="poder_superinteligencia"
+                                value="Superinteligencia">
+                            <label for="superinteligencia">Superinteligencia <br></label>
+                            <input id="billetera" type="checkbox" name="poder_billetera" value="billetera">
+                            <label for="billtera">Billetera Gorda <br></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Tipo de personaje</legend>
+                            <input id="tipo_heroe" type="radio" name="tipo_heroe" value="tipo_heroe">
+                            <label for="tipo_heroe">Héroe / Heroína <br></label>
+                            <input id="tipo_villano" type="radio" name="tipo_heroe" value="Villano/Villana">
+                            <label for="tipo_villano">Villano / Villana <br></label>
+                        </fieldset>
+                    </div>
+                </div>
+                <input id="boton_agregar" class="botones" type="button" name="agregar" value="Añadir">
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>

@@ -12,29 +12,38 @@
 
 <body>
     <aside class="promo">Descuentos 20%</aside>
-    <header class="login">
-        <img id="icono_tienda" src="./img/tienda.png" alt="tienda">
-        <h1>Nombre tienda</h1>
+    <header class="formulario">
+        <div>
+            <img id="icono_tienda" src="./img/tienda.png" alt="tienda">
+            <h1>Nombre tienda</h1>
+            </div>
+            <nav id="menu">
+                <a href="login.html">Login</a>
+                <a href="registro.html">Registro</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="agregar.html">Agregar Superheroe</a>
+            </nav>
     </header>
     <main>
         <form action="index.html" enctype="multipart/form-data" method="GET">
-             <!-- Después hay que cambiarlo a POST! -->
+            <!-- Después hay que cambiarlo a POST! -->
             <section class="login_main">
                 <h2>Registro</h2>
                 <input type="text" name="nya" placeholder="Nombre y Apellido" />
                 <input type="email" name="email" placeholder="Correo Electrónico" />
                 <input type="password" name="contraseña" placeholder="**********" />
                 <input list="lista_pais" name="país" placeholder="país">
-                    <datalist id="lista_pais" >
-                        <option value="Argentina">
-                        <option value="Colombia">
-                        <option value="Chile">
-                    </datalist>
-                </input>                
-                <div>
+                <datalist id="lista_pais">
+                    <option value="Argentina">
+                    <option value="Colombia">
+                    <option value="Chile">
+                </datalist>
+                </input>
+                <div class="botones">
                     <button type="reset" name="Resetear"> Resetear</button>
                     <button class="botones" type="submit" name="entrar">Entrar</button>
                 </div>
+                <p>¿Ya tenés una cuenta? <span>ingresá</span></p>
             </section>
         </form>
     </main>
