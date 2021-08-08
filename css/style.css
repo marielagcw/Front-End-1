@@ -16,6 +16,9 @@
     box-sizing: border-box;
 }
 
+body{
+    cursor: url("../img/cute_star.png"), auto;
+}
 
 /* <<<<<  ᓚᘏᗢ  Header   >>>>> */
 
@@ -94,6 +97,7 @@ a{
     text-decoration: none;
     padding: 2rem;
     margin: 2rem;
+    transition: 0.5s;
 
 }
 
@@ -103,7 +107,7 @@ a:hover{
 }
 
 a:active{
-    border-radius: 100%;
+    transform: scale(1.5);
 }
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
@@ -123,8 +127,5 @@ footer {
     a:hover{
         background-color: white;
         font-weight: normal;
-    }
-    a:action{
-        border-radius: 15px;
     }
 }
