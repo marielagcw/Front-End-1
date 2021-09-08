@@ -1,130 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>FrontCat&Dog</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <section class="anuncios">
-            <span>Grandes ofertas en comederos</span>
-            <ul type="none" ;>
-                <li>Español</li><i class="fas fa-chevron-down"></i>
-                <li>$Arg</li><i class="fas fa-chevron-down"></i>
-            </ul>
-        </section>
-        <section class="menu">
-            <img id="logo" src="img/Logo.png" alt="Logo de la empresa FrontCat&Dog">
-            <nav>
-                <ul type="none" ;>
-                    <!-- Importante: colocar primero el ícono solo y después el <li> con su texto para que sea más sencillo acomodarlos después en el CSS-->
-                    <i class="fas fa-paw"></i>
-                    <li>Categorías</li>
-                    <i class="fas fa-paw"></i>
-                    <li>Pets</li>
-                    <i class="fas fa-paw"></i>
-                    <li>Nosotros</li>
-                    <i class="fas fa-paw"></i>
-                    <li>Contactanos</li>
-                </ul>
-            </nav>
-        </section>
+      <section class="anuncios">
+        <span>Grandes ofertas en comederos</span>
+        <ul type="none" ;>
+          <li>Español</li>
+          <i class="fas fa-chevron-down"></i>
+          <li>$Arg</li>
+          <i class="fas fa-chevron-down"></i>
+        </ul>
+      </section>
+      <section class="menu">
+        <img
+          id="logo"
+          src="img/Logo.png"
+          alt="Logo de la empresa FrontCat&Dog"
+        />
+        <nav>
+          <ul type="none" ;>
+            <!-- Importante: colocar primero el ícono solo y después el <li> con su texto para que sea más sencillo acomodarlos después en el CSS-->
+            <i class="fas fa-paw"></i>
+            <li>Categorías</li>
+            <i class="fas fa-paw"></i>
+            <li>Pets</li>
+            <i class="fas fa-paw"></i>
+            <li>Nosotros</li>
+            <i class="fas fa-paw"></i>
+            <li>Contactanos</li>
+          </ul>
+        </nav>
+      </section>
     </header>
     <main>
-        <section class="banner">
-            <div>
-                <p class="bienvenida">¡Es un placer tenerte aquí!</p>
-                <p>¡Comederos en descuento!</p>
-                <h1>COMEDEROS</h1>
-            </div>
-        </section>
-        <section class="destacados">
-            <img src="img/pawprint 1.png" alt="huella de patita">
-            <p>Productos destacados</p>
-            <h2>Comederos - Accesorios - Comida</h2>
-        </section>
-        <section class="productos">
-            <article>
-                <img src="img/churrasquito.png" alt="churrasquitos">
-                <p>Juguete churrasquito</p>
-                <p class="precios">$150</p>
-            </article>
-            <article>
-                <img src="img/comedero.png" alt="comedero">
-                <p>Juguete churrasquito</p>
-                <p class="precios">$150</p>
-            </article>
-            <article>
-                <img src="img/Huesito.png" alt="huesito">
-                <p>Juguete churrasquito</p>
-                <p class="precios">$150</p>
-            </article>
-        </section>
-        
-        
-        <form class="contacto" action="index.html" method="post">
-            <fieldset>
-                <legend class="titulo">Contáctanos</legend>
-                <input class="formulario" type="text" name="nya" placeholder="Nombre y apellido">
-
-<!-- continuar desde aquí modificando el formulario  -->
-                <p class="formulario">Ingresá tu correo electrónico</p>
-                <p class="formulario">Teléfono</p>
-            </fieldset>
-            <div class="botones">
-                <p id="resetear">Resetear</p>
-                <p id="enviar">Enviar</p>
-            </div>
-        </form>
-
-
-        
+      <section class="banner">
+        <div>
+          <p class="bienvenida">¡Es un placer tenerte aquí!</p>
+          <p>¡Comederos en descuento!</p>
+          <h1>COMEDEROS</h1>
+        </div>
+      </section>
+      <section class="destacados">
+        <img src="img/pawprint 1.png" alt="huella de patita" />
+        <p>Productos destacados</p>
+        <h2>Comederos - Accesorios - Comida</h2>
+      </section>
+      <section class="productos">
+        <article>
+          <img src="img/churrasquito.png" alt="churrasquitos" />
+          <p>Juguete churrasquito</p>
+          <p class="precios">$150</p>
+        </article>
+        <article>
+          <img src="img/comedero.png" alt="comedero" />
+          <p>Juguete churrasquito</p>
+          <p class="precios">$150</p>
+        </article>
+        <article>
+          <img src="img/Huesito.png" alt="huesito" />
+          <p>Juguete churrasquito</p>
+          <p class="precios">$150</p>
+        </article>
+      </section>
+      <form class="contacto" action="index.html" method="get">
+        <fieldset>
+          <legend class="titulo">Contáctanos</legend>
+          <input
+            class="formulario"
+            type="text"
+            name="nya"
+            placeholder="Nombre y apellido"
+          />
+          <input
+            class="formulario"
+            type="email"
+            name="email"
+            placeholder="Ingresá tu correo electrónico"
+          />
+          <input
+            class="formulario"
+            type="text"
+            name="phone"
+            placeholder="Teléfono"
+          />
+        </fieldset>
+        <div class="botones">
+          <input id="resetear" type="reset" value="Resetear">
+          <input id="enviar" type="submit" value="Enviar">
+        </div>
+      </form>
     </main>
     <footer>
-        <section class="suscripciones">
+      <section class="suscripciones">
+        <div>
+          <i class="far fa-envelope"></i>
+          <p>Suscríbete para más novedades</p>
+        </div>
+        <form>
+          <div>
+            <input
+              id="completar"
+              class="formulario"
+              type="email"
+              name="emailSuscripcion"
+              placeholder="Ingresá tu correo electronico"
+            />
+            <input
+              id="boton_suscripcion"
+              class="formulario"
+              type="submit"
+              value="Suscribirme"
+            />
+          </div>
+        </form>
+      </section>
+      <section>
+        <div class="iconos_sociales">
+          <article>
+            <i class="fas fa-map-marker-alt"></i>
             <div>
-                <i class="far fa-envelope"></i>
-                <p>Suscríbete para más novedades</p>
+              <p class="datos">Localidad</p>
+              <p class="subtitulo">Calle - Provincia</p>
             </div>
+          </article>
+          <article>
+            <i class="fas fa-phone"></i>
             <div>
-                <p id="completar" class="formulario">Ingresá tu correo electronico</p>
-                <p id="boton_suscripcion" class="formulario">Suscribirme</p>
+              <p class="datos">Teléfono</p>
+              <p class="subtitulo">Número de teléfono</p>
             </div>
-        </section>
-        <section>
-            <div class="iconos_sociales">
-                <article>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <p class="datos">Localidad</p>
-                        <p  class="subtitulo">Calle - Provincia</p>
-                    </div>
-                </article>
-                <article>
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <p class="datos">Teléfono</p>
-                        <p class="subtitulo">Número de teléfono</p>
-                    </div>
-                </article>
-                <article>
-                    <i class="fas fa-at"></i>
-                    <div>
-                        <p class="datos">Correo Electrónico</p>
-                        <p class="subtitulo">Dirección de Correo</p>
-                    </div>
-                </article>
+          </article>
+          <article>
+            <i class="fas fa-at"></i>
+            <div>
+              <p class="datos">Correo Electrónico</p>
+              <p class="subtitulo">Dirección de Correo</p>
             </div>
-            <img src="./img/Logo2.png" alt="logo">
-        </section>
-        <p id="derechos"> Todos los derechos reservados Front End</p>
+          </article>
+        </div>
+        <img src="./img/Logo2.png" alt="logo" />
+      </section>
+      <p id="derechos">Todos los derechos reservados Front End</p>
     </footer>
-</body>
-
+  </body>
 </html>

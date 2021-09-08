@@ -1,15 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "main.scss",
-        "_variables.scss",
-        "_extends.scss",
-        "_mixins.scss",
-        "_basic.scss",
-        "_header.scss",
-        "_sections.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}

@@ -1,134 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap");
 
-
-:root{
-    --color_principal: #F59E9B;
-    --color_secundario: #4e8cce;
-    --color_fondo_suave_principal: #f59e9b41;
-    --color_fondo_suave_secundario: #90b9e41a;
-    --fuente_principal: "dancing script", cursive;
-    --fuente_secundaria: Raleway, sans-serif;
+:root {
+  --color_principal: #f59e9b;
+  --color_secundario: #4e8cce;
+  --color_fondo_suave_principal: #f59e9b41;
+  --color_fondo_suave_secundario: #90b9e41a;
+  --fuente_principal: "dancing script", cursive;
+  --fuente_secundaria: Raleway, sans-serif;
 }
 
-*{
-    margin: 0px;
-    padding:0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    cursor: url("../img/cute_star.png"), auto;
+body {
+  cursor: url("../img/cute_star.png"), auto;
 }
 
 /* <<<<<  ᓚᘏᗢ  Header   >>>>> */
 
-
-header{
-    background-color: var(--color_principal);
-    color: white;
-    font-size: 1.5rem;
-    font-family: var(--fuente_principal);
-    text-align: center;
-    padding: 1.25rem;
-    position: sticky;
-    top: 0px;
-    z-index: 10;
+header {
+  background-color: var(--color_principal);
+  color: white;
+  font-size: 1.5rem;
+  font-family: var(--fuente_principal);
+  text-align: center;
+  padding: 1.25rem;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
-
 
 i.fas {
+  color: rgb(224, 72, 72);
+  margin-left: 0.5rem;
+  animation-name: heart;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-iteration-count: infinite;
+}
+
+@keyframes heart {
+  0%,
+  50% {
+    transform: scale(1.25);
+    color: rgb(255, 73, 185);
+  }
+  25%,
+  100% {
+    transform: scale(1);
     color: rgb(224, 72, 72);
-    margin-left: 0.5rem;
-    animation-name: heart;
-    animation-duration: 3s;
-    animation-timing-function: cubic-bezier(1, 0, 0, 1);
-    animation-iteration-count: infinite;
+  }
 }
-
-@keyframes heart{
-    0%, 50% {transform:scale(1.25);color: rgb(255, 73, 185) }
-    25%, 100% {transform:scale(1); color: rgb(224, 72, 72)}
-}
-
 
 /*<<<<<  ᓚᘏᗢ  Main   >>>>> */
 
 main {
-    background-image:url("../img/background\ Mariela\ GC.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    color: #ffffff;
-    font-family: var(--fuente_secundaria);
-    text-align: center;
+  background-image: url("../img/background\ Mariela\ GC.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: var(--fuente_secundaria);
+  text-align: center;
 }
 
-section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-section div{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+section div {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-h2{
-    color:var(--color_secundario);
-    font-family: var(--fuente_principal);
-    font-size: 2.5rem; 
-    margin: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
+  color: var(--color_secundario);
+  font-family: var(--fuente_principal);
+  font-size: 2.5rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-a{
-    box-shadow: 0rem 0rem 1rem rgba(96, 99, 243, 0.3);
-    border-radius: 15px;
-    font-family: var(--fuente_secundaria);
-    font-size: 1.5rem;
-    color: var(--color_secundario);
-    text-decoration: none;
-    padding: 2rem;
-    margin: 2rem;
-    transition: 0.5s;
-
-}
-
-a:hover{
-    background-color: var(--color_fondo_suave_principal);
-    font-weight: 900;
+a {
+  box-shadow: 0rem 0rem 1rem rgba(96, 99, 243, 0.3);
+  border-radius: 15px;
+  font-family: var(--fuente_secundaria);
+  font-size: 1.5rem;
+  color: var(--color_secundario);
+  text-decoration: none;
+  padding: 2rem;
+  margin: 2rem;
+  transition: 0.5s;
+  cursor: url("../img/cat.png"), auto;
 }
 
-a:active{
-    transform: scale(1.5);
+a:hover {
+  background-color: var(--color_principal);
+  font-weight: 900;
+  color: white;
+}
+
+a:active {
+  transform: scale(1.5);
 }
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
 footer {
-    background-color:var(--color_principal);
-    color: white;
-    font-family: "Dancing Script", cursive;
-    font-size: 2rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  background-color: var(--color_principal);
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@media screen and (max-width: 375px){
-    a:hover{
-        background-color: white;
-        font-weight: normal;
-    }
+@media screen and (max-width: 375px) {
+  a:hover {
+    background-color: white;
+    font-weight: normal;
+  }
 }

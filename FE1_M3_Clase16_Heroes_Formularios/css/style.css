@@ -366,15 +366,16 @@ footer p {
 /* .................. <<< ᓚᘏᗢ Animaciones CSS >>> ...................... */
 
 #boton_mas:active{
-    content:url("../img/Ellipse\ 2.png")
+    content:url("../img/Ellipse\ 2.png");
+    transform:rotate(45deg)
 }
 
-#boton_agregar:active{
+button[type=reset]:active, button.botones:active, input.botones:active{
     background-color: #001D2D;
     color: white;
 }
 
-input[type="text"]:focus{
-    background-color: #AFF9FE;
+input:not(.botones):focus, textarea:focus{
+    background-color: #b8f6fa;
 }
 

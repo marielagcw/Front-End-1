@@ -53,10 +53,16 @@ nav ul li a:before{
     position:absolute;
     bottom:-10px; 
     /* alto y ancho=0 */
+    height: 5px;
+    width: 0%;
     /* transition: ; */
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
 }
 nav ul li a:hover::before{
     /* ancho final */
+    width:100%;
 }
 
 /* Barra redes */
@@ -88,7 +94,6 @@ nav ul li a:hover::before{
 
 .social ul li a:hover{
     /* transform: ; */
-    transform: scale(1.1);
     background-color: var(--primary-color);
     /* padding: ; */
     padding-left: 50%;
