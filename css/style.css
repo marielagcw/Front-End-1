@@ -158,15 +158,10 @@ footer img {
 }
 
 @media screen and (max-width: 720px) {
-<<<<<<< HEAD
   header,
   h1,
   h2 {
     font-size: 2rem;
-=======
-  header, h1, h2{
-    font-size: 1.25rem;
->>>>>>> aaa7731ffa7e01ce01838566f4243b7cc6adb974
     word-wrap: normal;
   }
   section:nth-child(even) {
@@ -189,19 +184,11 @@ footer img {
     justify-content: space-around;
     align-items: center;
   }
-<<<<<<< HEAD
   article:hover {
     transform: scale(1);
   }
   a::before {
     content: "\261E";
-  }
-  h2 {
-    word-wrap: normal;
-=======
-  a{
-    font-size: 1rem;
->>>>>>> aaa7731ffa7e01ce01838566f4243b7cc6adb974
   }
   footer,
   header {
