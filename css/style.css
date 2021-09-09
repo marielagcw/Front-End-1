@@ -136,11 +136,30 @@ footer {
 }
 
 @media screen and (max-width: 375px) {
+  header, h1{
+    font-size: 1.5rem;
+    text-align: center;
+    word-wrap: normal;
+  }
+  section div{
+    flex-direction: column;
+    width:80vw;
+  }
+  a{
+    width: 80vw;
+    margin:1rem 0 1rem;
+  }
+  h2{
+    word-wrap: normal;
+  }
   a:hover {
     background-color: white;
     font-weight: normal;
   }
   a{
     font-size: 1rem;
+  }
+  footer img{
+    transform: scale(50%); 
   }
 }
