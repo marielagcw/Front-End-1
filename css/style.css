@@ -161,8 +161,8 @@ footer img {
   header,
   h1,
   h2 {
-    font-size: 2rem;
-    word-wrap: normal;
+    font-size: 1.5rem;
+    word-wrap: wrap;
   }
   section:nth-child(even) {
     background-image: none;
@@ -180,9 +180,15 @@ footer img {
   }
   article {
     box-shadow: 0rem 0rem 1rem rgb(255, 255, 255);
+    max-width:80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  article img{
+    max-width:80%;
+    height: auto;
+  }
   }
   article:hover {
     transform: scale(1);
@@ -199,4 +205,4 @@ footer img {
     width: 100%;
     height: fit-content;
   }
-}
+
