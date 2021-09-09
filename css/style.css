@@ -3,8 +3,8 @@
 :root {
   --color_principal: #f59e9b;
   --color_secundario: #4e8cce;
-  --color_fondo_suave_principal: #f59e9b41;
-  --color_fondo_suave_secundario: #90b9e41a;
+  /* --color_fondo_suave_principal: #f59e9b41;
+  --color_fondo_suave_secundario: #90b9e41a; */
   --fuente_principal: "Gochi Hand", cursive;
   --fuente_secundaria: Montserrat, sans-serif;
 }
@@ -98,29 +98,41 @@ article {
   height: 300px;
   margin: 2rem;
   box-shadow: 0rem 0rem 1rem rgba(96, 99, 243, 0.3);
-  border-radius: 15px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
 a {
   color: white;
   font-family: var(--fuente_secundaria);
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
+  width:80%;
+  padding:1rem;
+  border-radius: 10px;
+  border-style: solid;
+  border-width:0.5px;
+  border-color:rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0rem 0rem 1rem rgba(254, 254, 255, 0.3);
   transition-duration: 1s;
   transition-timing-function: ease-out;
   cursor: url("../img/cat.png") 30 10, auto;
 }
-a:hover::before,
-a:hover {
-  font-weight: 900;
-  font-size: 1.5rem;
+a::before{
   content: "\261E";
+  font-size:1.5rem;
+}
+a:hover{
+  transform:scale(1.1);
+  color:var(--color_secundario);
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0rem 0rem 0.5rem rgba(140, 96, 243, 0.747);
+  border-style: none;
+  font-weight: bold;
 }
 a:active {
   transform: scale(1.5);
@@ -130,9 +142,6 @@ article img {
   height: 60%;
   border-radius: 5px;
   border-color: none;
-}
-article:hover {
-  transform: scale(1.25);
 }
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
@@ -186,14 +195,18 @@ footer img {
     align-items: center;
   }
   article img{
-    max-width:80%;
+    max-width:55%;
     height: auto;
   }
-  article:hover {
-    transform: scale(1);
-  }
-  a::before {
-    content: "\261E";
+  a:hover {
+  transform:scale(1);
+  color:white;
+  background-color: transparent;
+  border-color:rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0rem 0rem 1rem rgba(254, 254, 255, 0.3);
+  font-weight: normal;
+  border-style: solid;
+  border-width:0.5px;
   }
   footer,
   header {
