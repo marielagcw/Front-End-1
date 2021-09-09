@@ -189,7 +189,6 @@ footer img {
     max-width:80%;
     height: auto;
   }
-  }
   article:hover {
     transform: scale(1);
   }
@@ -205,4 +204,5 @@ footer img {
     width: 100%;
     height: fit-content;
   }
+}
 
