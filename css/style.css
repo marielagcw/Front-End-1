@@ -24,6 +24,7 @@ header {
   color:var(--color_principal);
   font-size: 2rem;
   font-family: var(--fuente_principal);
+  text-align: center;
   letter-spacing: 0.2rem;
   background-image: url("../img/backgroundBlanco.png");
   background-size:cover;
@@ -133,12 +134,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 375px) {
-  header, h1{
-    font-size: 1.5rem;
-    text-align: center;
+  header, h1, h2{
+    font-size: 1.25rem;
     word-wrap: normal;
   }
   section div{
@@ -147,7 +148,8 @@ footer {
   }
   a{
     width: 80vw;
-    margin:1rem 0 1rem;
+    margin:0.5rem 0 0.5rem;
+    padding:0.25rem;
   }
   h2{
     word-wrap: normal;
@@ -159,7 +161,13 @@ footer {
   a{
     font-size: 1rem;
   }
+  footer, header{
+    background-color: white;
+    background-image: none;
+    
+  }
   footer img{
-    transform: scale(50%); 
+    width:100%; 
+    height: fit-content;
   }
 }
