@@ -158,10 +158,6 @@ footer img{
   h2{
     word-wrap: normal;
   }
-  a:hover {
-    background-color: white;
-    font-weight: normal;
-  }
   a{
     font-size: 1rem;
   }
