@@ -1,38 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat&display=swap');
+
 
 :root {
   --color_principal: #f59e9b;
   --color_secundario: #4e8cce;
   --color_fondo_suave_principal: #f59e9b41;
   --color_fondo_suave_secundario: #90b9e41a;
-  --fuente_principal: "dancing script", cursive;
-  --fuente_secundaria: Raleway, sans-serif;
+  --fuente_principal: "Gochi Hand", cursive;
+  --fuente_secundaria: Montserrat, sans-serif;
 }
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-
 body {
-  cursor: url("../img/cute_star.png"), auto;
+  cursor: url("../img/cute_star.png") 15 15 , auto;
 }
 
 /* <<<<<  ᓚᘏᗢ  Header   >>>>> */
 
 header {
-  background-color: var(--color_principal);
-  color: white;
-  font-size: 1.5rem;
+  color:var(--color_principal);
+  font-size: 2rem;
   font-family: var(--fuente_principal);
-  text-align: center;
+  letter-spacing: 0.2rem;
+  background-image: url("../img/backgroundBlanco.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 95vh;
   padding: 1.25rem;
-  position: sticky;
-  top: 0px;
-  z-index: 10;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 i.fas {
   color: rgb(224, 72, 72);
   margin-left: 0.5rem;
@@ -41,7 +43,6 @@ i.fas {
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
   animation-iteration-count: infinite;
 }
-
 @keyframes heart {
   0%,
   50% {
@@ -58,62 +59,61 @@ i.fas {
 /*<<<<<  ᓚᘏᗢ  Main   >>>>> */
 
 main {
-  background-image: url("../img/background\ Mariela\ GC.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   color: #ffffff;
-  font-family: var(--fuente_secundaria);
   text-align: center;
 }
-
 section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  min-height:95vh;
+  display:flex;
+  flex-direction:column;
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
 }
-
-section div {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+section:nth-child(even){
+  background-image: url("../img/backgroundCeleste.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+section:nth-child(odd){
+  background-image: url("../img/backgroundRosa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 h2 {
-  color: var(--color_secundario);
   font-family: var(--fuente_principal);
   font-size: 2.5rem;
+  letter-spacing: 0.15rem;
   margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+section div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 a {
+  color:white;
+  width:300px;
+  height:300px;
+  margin:2rem;
   box-shadow: 0rem 0rem 1rem rgba(96, 99, 243, 0.3);
   border-radius: 15px;
   font-family: var(--fuente_secundaria);
   font-size: 1.5rem;
-  color: var(--color_secundario);
   text-decoration: none;
-  padding: 2rem;
-  margin: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   transition: 0.5s;
-  cursor: url("../img/cat.png"), auto;
+  cursor: url("../img/cat.png") 30 10, auto;
 }
-
 a:hover {
-  background-color: var(--color_principal);
   font-weight: 900;
   color: white;
 }
-
 a:active {
   transform: scale(1.5);
 }
@@ -121,8 +121,12 @@ a:active {
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
 footer {
-  background-color: var(--color_principal);
-  color: white;
+  width: 100%;
+  height: 100vh;
+  background-image:url("../img/backgroundBlancoCierre.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:var(--color_secundario);
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
   padding: 2rem;
@@ -135,5 +139,8 @@ footer {
   a:hover {
     background-color: white;
     font-weight: normal;
+  }
+  a{
+    font-size: 1rem;
   }
 }
