@@ -136,6 +136,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+footer img{
+  height:100%;
+  width:fit-content;
+}
 
 @media screen and (max-width: 375px) {
   header, h1, h2{
