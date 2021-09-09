@@ -141,7 +141,7 @@ footer img{
   width:fit-content;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 720px) {
   header, h1, h2{
     font-size: 1.25rem;
     word-wrap: normal;
