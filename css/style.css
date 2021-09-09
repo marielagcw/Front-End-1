@@ -113,10 +113,7 @@ a {
   transition-timing-function: ease-out;
 }
 a:hover{
-  transform:scale(1.5);
-}
-a:active {
-  transform: scale(1.5);
+  transform:scale(1.25);
 }
 a img {
   width: fit-content;
@@ -179,12 +176,6 @@ footer img {
   a img{
     max-width:80%;
     height: auto;
-  }
-  a:hover {
-    transform: scale(1);
-  }
-  a::before {
-    content: "\261E";
   }
   footer,
   header {
