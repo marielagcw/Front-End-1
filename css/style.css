@@ -93,7 +93,11 @@ section div {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-article {
+a {
+  color: white;
+  font-family: var(--fuente_secundaria);
+  font-size: 1.25rem;
+  text-decoration: none;
   width: 300px;
   height: 300px;
   margin: 2rem;
@@ -104,36 +108,23 @@ article {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  cursor: url("../img/cat.png") 30 10, auto;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
-a {
-  color: white;
-  font-family: var(--fuente_secundaria);
-  font-size: 1.25rem;
-  text-decoration: none;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-  cursor: url("../img/cat.png") 30 10, auto;
-}
-a:hover::before,
-a:hover {
-  font-weight: 900;
-  font-size: 1.5rem;
-  content: "\261E";
+a:hover{
+  transform:scale(1.5);
 }
 a:active {
   transform: scale(1.5);
 }
-article img {
+a img {
   width: fit-content;
   height: 60%;
   border-radius: 5px;
   border-color: none;
 }
-article:hover {
-  transform: scale(1.25);
-}
+
 
 /*<<<<<  ᓚᘏᗢ  Footer   >>>>> */
 
@@ -178,18 +169,18 @@ footer img {
     justify-content: center;
     width: 80vw;
   }
-  article {
+  a {
     box-shadow: 0rem 0rem 1rem rgb(255, 255, 255);
     max-width:80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  article img{
+  a img{
     max-width:80%;
     height: auto;
   }
-  article:hover {
+  a:hover {
     transform: scale(1);
   }
   a::before {
