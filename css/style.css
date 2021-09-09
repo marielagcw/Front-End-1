@@ -93,7 +93,11 @@ section div {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-article {
+a {
+  color: white;
+  font-family: var(--fuente_secundaria);
+  font-size: 1.25rem;
+  text-decoration: none;
   width: 300px;
   height: 300px;
   margin: 2rem;
@@ -103,42 +107,18 @@ article {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  cursor: url("../img/cat.png") 30 10, auto;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
-a {
-  color: white;
-  font-family: var(--fuente_secundaria);
-  font-size: 1rem;
-  text-decoration: none;
-  width:80%;
-  height:5rem;
-  padding:0.8rem;
-  border-radius: 10px;
-  border-style: solid;
-  border-width:0.5px;
-  border-color:rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0rem 0rem 1rem rgba(254, 254, 255, 0.3);
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-  cursor: url("../img/cat.png") 30 10, auto;
-}
-a::before{
-  content: "\261E";
-  font-size:1.5rem;
-}
 a:hover{
-  transform:scale(1.1);
-  color:var(--color_secundario);
-  background-color: rgb(255, 255, 255);
-  box-shadow: inset 0rem 0rem 0.5rem rgba(140, 96, 243, 0.747);
-  border-style: none;
-  font-weight: bold;
+  transform:scale(1.5);
 }
 a:active {
   transform: scale(1.5);
 }
-article img {
+a img {
   width: fit-content;
   height: 60%;
   border-radius: 5px;
@@ -188,26 +168,22 @@ footer img {
     justify-content: center;
     width: 80vw;
   }
-  article {
+  a {
     box-shadow: 0rem 0rem 1rem rgb(255, 255, 255);
     max-width:80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  article img{
-    max-width:55%;
+  a img{
+    max-width:80%;
     height: auto;
   }
   a:hover {
-  transform:scale(1);
-  color:white;
-  background-color: transparent;
-  border-color:rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0rem 0rem 1rem rgba(254, 254, 255, 0.3);
-  font-weight: normal;
-  border-style: solid;
-  border-width:0.5px;
+    transform: scale(1);
+  }
+  a::before {
+    content: "\261E";
   }
   footer,
   header {
