@@ -10,9 +10,10 @@ header {
 }
 
 #foto_perfil {
-    width: 100px;
+    height:250px;
     display: block;
     margin:auto;
+    border-radius: 15px;
 }
 
 h1 {
