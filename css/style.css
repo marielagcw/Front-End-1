@@ -152,10 +152,14 @@ footer img {
 @media screen and (max-width: 720px) {
   header,
   h1,
-  h2,p {
+  h2 {
     font-size: 1.5rem;
     word-wrap: wrap;
     padding:1rem;
+  }
+  p{
+    height:40%;
+    font-size:1rem;
   }
   section:nth-child(even) {
     background-image: none;
