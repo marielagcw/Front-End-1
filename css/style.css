@@ -145,6 +145,8 @@ footer img {
   width: fit-content;
 }
 
+/* <<<<<  ᓚᘏᗢ  Media Query   >>>>> */
+
 @media screen and (max-width: 720px) {
   header,
   h1,
@@ -174,8 +176,11 @@ footer img {
     align-items: center;
   }
   a img{
-    max-width:80%;
+    max-width:50%;
     height: auto;
+  }
+  a:hover{
+    transform:scale(1.05);
   }
   footer,
   header {
