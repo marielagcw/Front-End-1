@@ -89,6 +89,7 @@ h2 {
   align-items: center;
 }
 section div {
+  margin-bottom:1.5rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
