@@ -152,9 +152,10 @@ footer img {
 @media screen and (max-width: 720px) {
   header,
   h1,
-  h2 {
+  h2,p {
     font-size: 1.5rem;
     word-wrap: wrap;
+    padding:1rem;
   }
   section:nth-child(even) {
     background-image: none;
@@ -179,7 +180,7 @@ footer img {
   }
   a img{
     width:auto;
-    height: 50%;
+    height: 60%;
   }
   a:hover{
     transform:scale(1.05);
