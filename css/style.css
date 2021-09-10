@@ -152,7 +152,7 @@ footer img {
 @media screen and (max-width: 720px) {
   header,
   h1,
-  h2 {
+  h2,p {
     font-size: 1.25rem;
     word-wrap: wrap;
     padding:1rem;
