@@ -1,2 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
+main {
+  padding: 3rem 6rem;
+}
+
+main h2 {
+  color: black;
+  font-family: Anton, sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+}
+
+main p {
+  font-family: Roboto, monospace;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+header {
+  font-family: Roboto, monospace;
+  font-size: 1.5rem;
+  padding: 3rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header ul li {
+  margin: 2rem;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section div.texto {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 40px;
+  color: #8b8b8b;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section div.texto div.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+section div.texto div.botones button {
+  margin: 1rem;
+  width: 8rem;
+  height: 4rem;
+  background-color: #03faee;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+section div.imagen img {
+  width: 50vw;
+  height: 80%;
+}
+
+section.items ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section.items ol li {
+  background-color: #f8f8f8;
+  margin: 2rem;
+  height: 300px;
+  padding: 2rem;
+  list-style-position: inside;
+}
+
+section.items ol li::before {
+  content: "\20DD";
+  font-size: 3rem;
+  position: relative;
+  right: 2rem;
+  top: 0.5rem;
+}
 /*# sourceMappingURL=main.css.map */

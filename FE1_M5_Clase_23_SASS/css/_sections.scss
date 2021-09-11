@@ -1,0 +1,48 @@
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  div.texto {
+    width:50vw;
+    display: flex;
+    line-height: 40px;
+    color:$colorTextoPrimario;
+    flex-direction: column;
+    justify-content: space-around;
+    div.botones {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      button {
+        margin: 1rem;
+        width: 8rem;
+        height: 4rem;
+        background-color: $colorPrincipal;
+        border-radius: 5px;
+        border-width: 1px;
+      }
+    }
+  }
+  div.imagen img{
+      width:50vw;
+      height:80%;
+  }
+}
+section.items ol {
+  display: flex;
+  flex-direction: row;
+  li{
+      background-color:$colorSecundario;
+      margin:2rem;
+      height: 300px;
+      padding:2rem;
+      list-style-position: inside;
+    &::before{
+        content:"\20DD";
+        font-size:3rem;
+        position:relative;
+        right:2rem;
+        top:0.5rem;
+    }
+  }
+}

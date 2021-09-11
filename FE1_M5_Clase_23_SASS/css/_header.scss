@@ -1,5 +1,14 @@
-header { 
-    p{ // puedo anidar colocando más selectores dentro de cada selector
-
+header {
+  font-family: $fontFamilyGeneral;
+  font-size: 1.5rem;
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      margin: 2rem;
     }
+  }
 }

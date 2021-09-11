@@ -1,12 +1,8 @@
-// colores
-$bg-primary: #03faee;
-$bg-secondary: #f8f8f8;
-$color-primary: #8b8b8b;
-$shadow: #92f7f2;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
 
-// fuentes
-$fontFamily: arial, helvetica, sans-serif;
-$fontFamilyH2: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-$fontSizeH2: 55px;
-$highLineH2: 70px;
-$letterSpacingH2: 10px;
+$fontFamiliyTittle: Anton, sans-serif;
+$fontFamilyGeneral: Roboto, monospace;
+$colorPrincipal:#03faee;
+$colorSecundario:#f8f8f8;
+$colorTextoPrimario:#8b8b8b;
+$shadow:#92f7f2;

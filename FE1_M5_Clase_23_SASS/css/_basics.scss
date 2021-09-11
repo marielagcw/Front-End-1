@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  padding: 3rem 6rem;
+  h2 {
+    color:black;
+    font-family: $fontFamiliyTittle;
+    font-size: 55px;
+    line-height: 70px;
+    letter-spacing: 10px;
+  }
+  p {
+    font-family: $fontFamilyGeneral;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem;
+  }
+}
