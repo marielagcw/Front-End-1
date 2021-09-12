@@ -3,11 +3,24 @@ header {
   font-family: $fontFamilyGeneral;
   font-size: 1.5rem;
   padding: 3rem 6rem;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   background-color: white;
-  top:0px;
+  top: 0px;
+  @media screen and (max-width: 720px) {
+    p.marca::after {
+      content: "\2630";
+      margin: 5rem;
+    }
+    position: relative;
+    justify-content: center;
+    nav {
+      display: none;
+    }
+  }
   ul {
     display: flex;
     flex-direction: row;
@@ -20,11 +33,3 @@ header {
     }
   }
 }
-// @media screen and (max-width: 720px){
-//    header{
-//      flex-direction: column;
-//      ul{
-//        flex-direction:column;
-//      }
-//     }
-// }

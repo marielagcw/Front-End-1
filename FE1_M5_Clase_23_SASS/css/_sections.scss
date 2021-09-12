@@ -2,55 +2,82 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  h2 {
+    color: black;
+    font-family: $fontFamiliyTittle;
+    font-size: 55px;
+    line-height: 70px;
+    letter-spacing: 10px;
+    &::selection {
+      @include seleccionarTexto($colorTextoPrimario, $colorPrincipal);
+    }
+  }
+  p {
+    font-family: $fontFamilyGeneral;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem;
+    &::selection {
+      @include seleccionarTexto(black, $shadow);
+    }
+  }
   div.texto {
-    width:50vw;
-    display: flex;
+    color: $colorTextoPrimario;
     line-height: 40px;
-    color:$colorTextoPrimario;
+    width: 50vw;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     div.botones {
       display: flex;
       flex-direction: row;
-      justify-content: start;
+      justify-content: space-around;
       button {
-        margin: 1rem;
-        width: 8rem;
-        height: 4rem;
         background-color: $colorPrincipal;
         border-radius: 5px;
         border-width: 1px;
+        width: 8rem;
+        height: 4rem;
+        margin: 1rem;
         @extend %transiciones_extends;
-        &:hover{
+        &:hover {
           @extend %hovers_extends;
         }
       }
     }
   }
-  div.imagen img{
-      width:50vw;
-      height:80%;
+  div.imagen img {
+    width: 50vw;
+    height: 80%;
   }
 }
 section.items ol {
   display: flex;
   flex-direction: row;
-  li{
-      background-color:$colorSecundario;
-      margin:2rem;
-      height: 300px;
-      padding:2rem;
-      list-style-position: inside;
-    &::before{
-        content:"\20DD";
-        font-size:3rem;
-        position:relative;
-        right:2rem;
-        top:0.5rem;
+  li {
+    background-color: $colorSecundario;
+    height: 300px;
+    margin: 2rem;
+    padding: 1rem;
+    list-style-position: inside;
+    p:first-child {
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+    &::before {
+      content: "\20DD";
+      font-size: 3rem;
+      position: relative;
+      right: 2rem;
+      top: 0.5rem;
     }
   }
 }
-p:first-child{
-  font-weight: 900;
-  font-size: 1.2rem;
+@media screen and (max-width: 720px) {
+  section.seccionPrincipal,
+  section.items ol {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
