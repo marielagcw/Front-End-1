@@ -1,0 +1,4 @@
+@mixin seleccionarTexto ($colorTexto, $colorBackground){
+    background-color: $colorBackground;
+    color: $colorTexto;
+}

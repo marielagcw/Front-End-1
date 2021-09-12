@@ -20,6 +20,10 @@ section {
         background-color: $colorPrincipal;
         border-radius: 5px;
         border-width: 1px;
+        @extend %transiciones_extends;
+        &:hover{
+          @extend %hovers_extends;
+        }
       }
     }
   }
@@ -45,4 +49,8 @@ section.items ol {
         top:0.5rem;
     }
   }
+}
+p:first-child{
+  font-weight: 900;
+  font-size: 1.2rem;
 }

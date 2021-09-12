@@ -1,14 +1,30 @@
 header {
+  height: 10rem;
   font-family: $fontFamilyGeneral;
   font-size: 1.5rem;
   padding: 3rem 6rem;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  top:0px;
   ul {
     display: flex;
     flex-direction: row;
     li {
       margin: 2rem;
+      @extend %transiciones_extends;
+      &:hover {
+        @extend %hovers_extends;
+      }
     }
   }
 }
+// @media screen and (max-width: 720px){
+//    header{
+//      flex-direction: column;
+//      ul{
+//        flex-direction:column;
+//      }
+//     }
+// }

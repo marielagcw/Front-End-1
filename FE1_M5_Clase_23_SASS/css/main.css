@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+header ul li:hover, section div.texto div.botones button:hover {
+  background-color: #92f7f2;
+  color: #8b8b8b;
+  border-radius: 5px;
+  border-color: #adafaf;
+  border-style: solid;
+  border-width: thin;
+  padding: 1rem;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+header ul li, section div.texto div.botones button {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,6 +39,16 @@ main h2 {
   letter-spacing: 10px;
 }
 
+main h2::-moz-selection {
+  background-color: #03faee;
+  color: #8b8b8b;
+}
+
+main h2::selection {
+  background-color: #03faee;
+  color: #8b8b8b;
+}
+
 main p {
   font-family: Roboto, monospace;
   font-size: 1rem;
@@ -25,7 +56,18 @@ main p {
   padding: 1rem;
 }
 
+main p::-moz-selection {
+  background-color: #92f7f2;
+  color: black;
+}
+
+main p::selection {
+  background-color: #92f7f2;
+  color: black;
+}
+
 header {
+  height: 10rem;
   font-family: Roboto, monospace;
   font-size: 1.5rem;
   padding: 3rem 6rem;
@@ -35,6 +77,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0px;
 }
 
 header ul {
@@ -130,5 +176,10 @@ section.items ol li::before {
   position: relative;
   right: 2rem;
   top: 0.5rem;
+}
+
+p:first-child {
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

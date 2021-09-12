@@ -11,11 +11,17 @@ main {
     font-size: 55px;
     line-height: 70px;
     letter-spacing: 10px;
+    &::selection{
+      @include seleccionarTexto($colorTextoPrimario, $colorPrincipal)
+    }
   }
   p {
     font-family: $fontFamilyGeneral;
     font-size: 1rem;
     text-align: justify;
     padding: 1rem;
+    &::selection{
+      @include seleccionarTexto(black,  $shadow)
+    }
   }
 }

@@ -1,0 +1,16 @@
+%hovers_extends {
+    background-color: $shadow;
+    color: $colorTextoPrimario;
+    border-radius: 5px;
+    border-color: $colorBorde;
+    border-style: solid;
+    border-width: thin;
+    padding: 1rem;
+    transform: scale(1.10);
+    transform-origin:center;
+}
+
+%transiciones_extends {
+    transition-duration:1s;
+    transition-timing-function: ease-out;
+}
