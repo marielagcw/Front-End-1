@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* variables */
+:root {
+  --bgPrincipalColor: #fafafa;
+  --fuenteColor1: #1ca0f6;
+  --fuenteColor2: #808080;
+  --footerColor: #222222;
+  --fuenteRegular: Roboto, sans-serif;
+  --fuenteMedium: Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ᓚᘏᗢ Trabajo en proceso → Grid */
+
+div.container {
+  font-family: var(--fuenteRegular);
+  font-size: 1rem;
+  height:95vh;
+  width:95vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+header {
+  box-shadow: 0px 0px 0px 1px var(--fuenteColor2);
+  padding: 2rem;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+h1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 2rem;
+  justify-self: start;
+  align-self: center;
+}
+nav {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+img {
+  border-radius: 100%;
+  max-width: 60%;
+  max-height: 60%;
+}
+main {
+  grid-column: 1/4;
+  grid-row: 2/4;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.histories {
+  grid-row: 1/2;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px 1px var(--fuenteColor2);
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.post {
+  color: var(--footerColor);
+  font-size: 1.5rem;
+  padding: 1rem;
+  grid-row: 2/3;
+  box-shadow: 0px 0px 5px 1px var(--fuenteColor2);
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  gap: 2rem;
+}
+div.encabezado {
+  font-size: 2rem;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+div.encabezado img {
+  grid-column: 1/2;
+}
+div.encabezado p {
+  grid-column: 2/3;
+}
+div.encabezado a {
+  grid-column: 3/4;
+}
+div.cuerpo {
+  border-top: var(--fuenteColor2);
+  border-top-width: thin;
+  border-top-style: solid;
+  grid-row: 2/8;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+footer {
+  grid-column: 1/5;
+  grid-row: 5/6;
+}
