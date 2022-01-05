@@ -10,6 +10,6 @@ Gracias por visitar mi repositorio
 ☆*: .｡. o(≧▽≦)o .｡.:*☆
 Hello! You are welcome to my first repository!
 I love Front and worked a lot on it!
-I had never worked in the information technology sector before, 
+I had never worked in the IT sector before, 
 that is why all this progress is very important to me. 
 Thanks for visiting my repository
